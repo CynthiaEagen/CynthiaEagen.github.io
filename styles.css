@@ -1,0 +1,12 @@
+:root {
+    --white: #F1F1F1;
+    --charcoal: #2E2E2E;
+    --red: #2E2E2E;
+    --black: #1F1F1F;
+    --yellow: #FFD300;
+    --orange: #E45400;
+    --darkRed: #940000;
+}
+#disclaimer {
+    background-color: var(--yellow);
+}
