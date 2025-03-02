@@ -27,30 +27,33 @@
     <header class="row">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid fugaz-one-regular justify-content-center">
-                    <a class="navbar-brand align-text-bottom" href="#intro">
-                        <img src="images/logo.png" alt="Logo" class="d-inline-block">
-                    </a>  
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav" role="navigation">
-                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
-                            <a class="nav-link" href="#education">Education</a>
-                            <a class="nav-link" href="#projects">Projects</a>
-                            <a class="nav-link" href="#resume">Resume</a>
-                            <a class="nav-link" href="#contact-info">Contact Info</a>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#intro">
+                                    <img src="images/logo.png" alt="Logo">
+                                </a>
+                            </div>
                         </div>
-                        <!-- TODO: fix this -->
-                        <!-- <div id="animation">
-                            <div id="in" class="ani-div"></div>
-                            <div id="charcoal" class="ani-div"></div>
-                            <div id="darkRed" class="ani-div"></div>
-                            <div id="orange" class="ani-div"></div>
-                            <div id="red" class="ani-div"></div>
-                            <div id="out" class="ani-div"></div>
-                        </div> -->
+                        <div class="row mt-2">
+                            <div class="col">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav" role="navigation">
+                                        <a class="nav-link" aria-current="page" href="#skills">Skills</a>
+                                        <a class="nav-link" href="#education">Education</a>
+                                        <a class="nav-link" href="#projects">Projects</a>
+                                        <a class="nav-link" href="#resume">Resume</a>
+                                        <a class="nav-link" href="#contact-info">Contact Info</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -255,15 +258,34 @@
                     <p>Although I haven't had the time to finish anything, here's some of the ideas I've started work on!</p>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md mb-2">
                         <h4>To-Do List App</h4>
-                        <ul class="text-start">
-                            <li>I've been using to-do lists to help keep track of my tasks for years.</li>
-                            <li>But with ever app I've tried, I've always found them to be lacking in one way or another.</li>
-                            <li>The goal with this project is to develop a web app that smooths the process of list-cleaning into something easy and quick.</li>
-                        </ul>
+                        <div class="row checkbox-row">
+                            <div class="col-1">
+                                <input id="box-1" type="checkbox" class="form-check-input filter-dark-red">
+                            </div>
+                            <div class="col text-start">
+                                <label for="box-1" class="checkbox-text">I've been using to-do lists to help keep track of my tasks for years.</label>
+                            </div>
+                        </div>
+                        <div class="row checkbox-row">
+                            <div class="col-1">
+                                <input id="box-2" type="checkbox" class="form-check-input filter-dark-red">
+                            </div>
+                            <div class="col text-start">
+                                <label for="box-2" class="checkbox-text">But with ever app I've tried, I've always found them to be lacking in one way or another.</label>
+                            </div>
+                        </div>
+                        <div class="row checkbox-row">
+                            <div class="col-1">
+                                <input id="box-3" type="checkbox" class="form-check-input filter-dark-red">
+                            </div>
+                            <div class="col text-start">
+                                <label for="box-3" class="checkbox-text">The goal with this project is to develop a web app that smooths the process of list-cleaning into something easy and quick.</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                         <h4>TTRPG Note Taker App</h4>
                         <p>I love playing Dungeons and Dragons and Vampire the Masqureade, but I've found that my note-taking suffers when I dont have a structure to it. The goal with this project is to have a dedicated application to quickly jot notes on characters, places, and things that come up during a game and have them automatically organized and connected to each other with a easy to use interface.</p>
                     </div>
@@ -286,13 +308,13 @@
             <h2>Feel like reaching out?</h2>
             <div class="row">
                 <div class="col text-end">
-                    <a href="www.linkedin.com/in/cynthia-eagen-62035b347" id="linkedin">
+                    <a href="https://www.linkedin.com/in/cynthia-eagen-62035b347" id="linkedin">
                         <img src="images/linkedin-svgrepo-com.svg" alt="linkedin" class="contact-logo filter-yellow hover-orange">
                     </a>
                 </div>
                 <div class="col text-start">
                     <a href="mailto:eagen.cynthia@gmail.com" id="email">
-                        <img src="images/email-svgrepo-com.svg" alt="linkedin" class="contact-logo filter-yellow hover-orange">
+                        <img id="email-logo" src="images/email-8-svgrepo-com.svg" alt="linkedin" class="contact-logo filter-yellow hover-orange">
                     </a>
                 </div>
             </div>

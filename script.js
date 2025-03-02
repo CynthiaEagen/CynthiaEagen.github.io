@@ -28,3 +28,16 @@ resumeButton.addEventListener('click', () => {
         
     }
 })
+
+const checkboxRows = document.getElementsByClassName("checkbox-row");
+const checkboxText = document.getElementsByClassName("checkbox-text");
+
+for (i = 0; i < checkboxRows.length; i++) {
+    checkboxRows.item(i).setAttribute("id", "line-" + i);
+    checkboxRows.item(i).addEventListener('click', (event) => {
+        if (!event.target.classList.contains("text-decoration-line-through"))
+            event.target.classList.add("text-decoration-line-through");
+        else
+            event.target.classList.remove("text-decoration-line-through");
+    });
+}
