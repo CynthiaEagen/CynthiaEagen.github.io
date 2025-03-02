@@ -1,12 +1,404 @@
 :root {
     --white: #F1F1F1;
     --charcoal: #2E2E2E;
-    --red: #2E2E2E;
+    --red: #ff0000;
     --black: #1F1F1F;
     --yellow: #FFD300;
     --orange: #E45400;
     --darkRed: #940000;
 }
+/* google fonts */
+.newsreader-standard {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*end google fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fugaz One", sans-serif;
+}
+body {
+    background: var(--charcoal);
+    color: var(--white);
+    font-size: larger;
+}
 #disclaimer {
     background-color: var(--yellow);
+    color: var(--charcoal);
+}
+#disclaimer p {
+    margin-bottom: 0;
+}
+header {
+    background-color: var(--white);
+}
+.navbar img {
+    height: 50px;
+    width:  44px;
+}
+.navbar-nav {
+    width:max-content;
+}
+.navbar-nav a {
+    font-size: large;
+    width: max-content;
+}
+#gradient {
+    background: var(--charcoal);
+    background: linear-gradient(0deg, var(--charcoal) 0%, var(--white) 100%);
+    height: 50px;
+}
+#intro, #skills, #education, #projects, #resume, #contact-info {
+    margin-top: 20px;
+}
+#intro {
+    text-align: start;
+    padding: 2.5%;
+    padding-top: 0.5%;
+}
+#title {
+    align-items: center;
+}
+@media screen and (max-width: 992px) {
+    #intro {
+        text-align: center;
+    }
+}
+#about-me p:last-child {
+    margin-bottom: 0;
+}
+.stars img {
+    width: 25px;
+}
+.stars div {
+    width: max-content;
+    margin-bottom: 16px;
+}
+.btn-custom {
+    font-size: larger;
+    background-color: var(--yellow);
+    min-width: max-content;
+    width: 25%;
+    margin-bottom: 1%;
+}
+.btn-custom:hover {
+    background-color: var(--orange);
+}
+footer {
+    margin-bottom: 50px;
+}
+.contact-logo {
+    width: 100px;
+}
+.filter-yellow {
+    filter: invert(79%) sepia(44%) saturate(1863%) hue-rotate(360deg) brightness(104%) contrast(103%);
+}
+.hover-orange:hover > .filter-yellow {
+    filter: invert(32%) sepia(83%) saturate(2565%) hue-rotate(12deg) brightness(99%) contrast(101%);
+}
+.hover-orange:hover {
+    filter: invert(32%) sepia(83%) saturate(2565%) hue-rotate(12deg) brightness(99%) contrast(101%);
+}
+.filter-orange {
+    filter: invert(32%) sepia(83%) saturate(2565%) hue-rotate(12deg) brightness(99%) contrast(101%);
+}
+/* animation */
+#animation {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-left: 13px;
+}
+.ani-div {
+    width: 50px;
+    height: 100%;
+    display: flexbox;
+    /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+    margin-left: -13px;
+}
+#charcoal {
+    background-color: var(--charcoal);
+    animation: cycle-charcoal 5s ease infinite;
+}
+#red {
+    background-color: var(--red);
+    animation: cycle-red 5s ease infinite;
+}
+#out {
+    background-color: var(--yellow);
+    animation: cycle-out 5s ease infinite;
+}
+#in {
+    background-color: var(--yellow);
+    animation: cycle-in 5s ease infinite;
+}
+#orange {
+    background-color: var(--orange);
+    animation: cycle-orange 5s ease infinite;
+}
+#darkRed {
+    background-color: var(--darkRed);
+    animation: cycle-darkRed 5s ease infinite;
+}
+@keyframes cycle-in {
+    0% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(0); */
+    }
+    20% {
+        width: 50px;
+        background-color: var(--yellow);
+        /* transform: translateX(50px); */
+    }
+    20.01% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(0); */
+    }
+    40% {
+        width: 50px;
+        background-color: var(--red);
+        /* transform: translateX(50px); */
+    }
+    40.01% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(0); */
+    }
+    60% {
+        width: 50px;
+        background-color: var(--orange);
+        /* transform: translateX(50px); */
+    }
+    60.01% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(0); */
+    }
+    80% {
+        width: 50px;
+        background-color: var(--darkRed);
+        /* transform: translateX(50px); */
+    }
+    80.01% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(0); */
+    }
+    100% {
+        width: 50px;
+        background-color: var(--charcoal);
+        /* transform: translateX(50px); */
+    }
+}
+@keyframes cycle-charcoal {
+    0% {
+        background-color: var(--charcoal);
+        /* transform: translateX(0); */
+    }
+    20% {
+        background-color: var(--yellow);
+        /* transform: translateX(50px); */
+    }
+    20.01% {
+        transform: translateX(0);
+    }
+    40% {
+        background-color: var(--red);
+        /* transform: translateX(50px); */
+    }
+    40.01% {
+        transform: translateX(0);
+    }
+    60% {
+        background-color: var(--orange);
+        /* transform: translateX(50px); */
+    }
+    60.01% {
+        transform: translateX(0);
+    }
+    80% {
+        background-color: var(--darkRed);
+        /* transform: translateX(50px); */
+    }
+    80.01% {
+        /* transform: translateX(0); */
+    }
+    100% {
+        background-color: var(--charcoal);
+        /* transform: translateX(50px); */
+    }
+}
+@keyframes cycle-darkRed {
+    0% {
+        background-color: var(--darkRed);
+        /* transform: translateX(0); */
+    }
+    20% {
+        background-color: var(--charcoal);
+        /* transform: translateX(50px); */
+    }
+    20.01% {
+        /* transform: translateX(0); */
+    }
+    40% {
+        background-color: var(--yellow);
+        /* transform: translateX(50px); */
+    }
+    40.01% {
+        /* transform: translateX(0); */
+    }
+    60% {
+        background-color: var(--red);
+        /* transform: translateX(50px); */
+    }
+    60.01% {
+        /* transform: translateX(0); */
+    }
+    80% {
+        background-color: var(--orange);
+        /* transform: translateX(50px); */
+    }
+    80.01% {
+        /* transform: translateX(0); */
+    }
+    100% {
+        background-color: var(--darkRed);
+        /* transform: translateX(50px); */
+    }
+}
+@keyframes cycle-orange {
+    0% {
+        background-color: var(--orange);
+        /* transform: translateX(0); */
+    }
+    20% {
+        background-color: var(--darkRed);
+        /* transform: translateX(50px); */
+    }
+    20.01% {
+        /* transform: translateX(0); */
+    }
+    40% {
+        background-color: var(--charcoal);
+        /* transform: translateX(50px); */
+    }
+    40.01% {
+        /* transform: translateX(0); */
+    }
+    60% {
+        background-color: var(--yellow);
+        /* transform: translateX(50px); */
+    }
+    60.01% {
+        /* transform: translateX(0); */
+    }
+    80% {
+        background-color: var(--red);
+        /* transform: translateX(50px); */
+    }
+    80.01% {
+        /* transform: translateX(0); */
+    }
+    100% {
+        background-color: var(--orange);
+        /* transform: translateX(50px); */
+    }
+}
+@keyframes cycle-red {
+    0% {
+        background-color: var(--red);
+        /* transform: translateX(0); */
+    }
+    20% {
+        background-color: var(--orange);
+        /* transform: translateX(50px); */
+    }
+    20.01% {
+        /* transform: translateX(0); */
+    }
+    40% {
+        background-color: var(--darkRed);
+        /* transform: translateX(50px); */
+    }
+    40.01% {
+        /* transform: translateX(0); */
+    }
+    60% {
+        background-color: var(--charcoal);
+        /* transform: translateX(50px); */
+    }
+    60.01% {
+        /* transform: translateX(0); */
+    }
+    80% {
+        background-color: var(--yellow);
+        /* transform: translateX(50px); */
+    }
+    80.01% {
+        /* transform: translateX(0); */
+    }
+    100% {
+        background-color: var(--red);
+        /* transform: translateX(50px); */
+    }
+}
+@keyframes cycle-out {
+    0% {
+        width: 50px;
+        background-color: var(--yellow);
+        /* transform: translateX(0); */
+    }
+    20% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(50px); */
+    }
+    20.01% {
+        width: 50px;
+        background-color: var(--red);
+        /* transform: translateX(0); */
+    }
+    40% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(50px); */
+    }
+    40.01% {
+        width: 50px;
+        background-color: var(--orange);
+        /* transform: translateX(0); */
+    }
+    60% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(50px); */
+    }
+    60.01% {
+        width: 50px;
+        background-color: var(--darkRed);
+        /* transform: translateX(0); */
+    }
+    80% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(50px); */
+    }
+    80.01% {
+        width: 50px;
+        background-color: var(--charcoal);
+        /* transform: translateX(0); */
+    }
+    100% {
+        width: 0;
+        /* background-color: transparent; */
+        /* transform: translateX(50px); */
+    }
 }
